@@ -18,7 +18,7 @@ template:
     git branch: >-
       [master](https://github.com/sam-almighty/simple-toolchain/tree/master)
 toolchain:
-  name: starter-basic-1522061939992
+  name: 'simple-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
@@ -45,7 +45,7 @@ services:
       services:
         - app-repo
         - testscript-repo
-      name: 'newtest'
+      name: '{{services.app-repo.parameters.repo_name}}'
       ui-pipeline: true
       configuration:
         content:
@@ -56,7 +56,7 @@ services:
           PROD_SPACE_NAME: '{{form.pipeline.parameters.prod-space}}'
           PROD_ORG_NAME: '{{form.pipeline.parameters.prod-organization}}'
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
-        execute: false    
+        execute: false
 form:
   pipeline:
     parameters:
