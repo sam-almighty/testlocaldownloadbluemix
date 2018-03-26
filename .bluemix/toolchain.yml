@@ -45,7 +45,7 @@ services:
       services:
         - app-repo
         - testscript-repo
-      name: ''
+      name: 'testsample'
       ui-pipeline: true
       configuration:
         content:
