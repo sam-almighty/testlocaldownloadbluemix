@@ -56,7 +56,7 @@ services:
           PROD_SPACE_NAME: '{{form.pipeline.parameters.prod-space}}'
           PROD_ORG_NAME: '{{form.pipeline.parameters.prod-organization}}'
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
-        execute: false    
+        execute: false   
 form:
   pipeline:
     parameters:
