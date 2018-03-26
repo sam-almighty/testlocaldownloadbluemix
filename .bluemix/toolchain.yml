@@ -45,7 +45,7 @@ services:
       services:
         - app-repo
         - testscript-repo
-      name: 'testsample'
+      name: ''
       ui-pipeline: true
       configuration:
         content:
@@ -56,8 +56,9 @@ services:
           PROD_SPACE_NAME: '{{form.pipeline.parameters.prod-space}}'
           PROD_ORG_NAME: '{{form.pipeline.parameters.prod-organization}}'
           PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
-        execute: false 
-  webide: service_id: orion      
+        execute: false
+  webide:
+    service_id: orion      
 form:
   pipeline:
     parameters:
