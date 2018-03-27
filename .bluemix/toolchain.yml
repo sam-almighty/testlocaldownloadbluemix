@@ -18,7 +18,7 @@ template:
     git branch: >-
       [master](https://github.com/sam-almighty/simple-toolchain/tree/master)
 toolchain:
-  name: starter-basic-1522141003151
+  name: MobileStarterTestUYIYV
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
@@ -27,7 +27,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: 'testscript-repo-{{timestamp}}'
-      repo_url: 'https://github.com/sam-almighty/testdroid-samples'
+      repo_url: ''
       type: clone
       has_issues: true
       enable_traceability: true
@@ -35,7 +35,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: 'app-repo-{{timestamp}}'
-      repo_url: 'https://github.com/sam-almighty/sample-android-app'
+      repo_url: ''
       type: clone
       has_issues: false
       enable_traceability: false
