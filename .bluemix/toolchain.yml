@@ -18,7 +18,7 @@ template:
     git branch: >-
       [master](https://github.com/sam-almighty/simple-toolchain/tree/master)
 toolchain:
-  name: starter-basic-1522832231272
+  name: starter-basic-1522838424408
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
@@ -45,7 +45,7 @@ services:
       services:
         - app-repo
         - testscript-repo
-      name: '{{services.app-repo.parameters.repo_name}}'
+      name: ''
       ui-pipeline: true
       configuration:
         content:
