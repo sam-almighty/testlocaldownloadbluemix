@@ -45,7 +45,7 @@ services:
       services:
         - app-repo
         - testscript-repo
-      name: ''
+      name: '{{services.app-repo.parameters.repo_name}}'
       ui-pipeline: true
       configuration:
         content:
